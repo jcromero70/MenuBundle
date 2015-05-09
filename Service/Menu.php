@@ -186,7 +186,7 @@ class Menu
         }
         if($this->route != $this->homepage['route'] && $add_homepage) {
             $homepage[] = array('title' => $this->menu[$this->homepage['id_name']]['title'], 'route' => $this->menu[$this->homepage['id_name']]['route'], 'icon' => $this->menu[$this->homepage['id_name']]['icon'] );
-            if ((!empty($this->breadcrumbs)) && ($this->breadcrumbs[0]['route'] != $this->homepage['route'])){
+            if ((isset($this->breadcrumbs[0])) && ($this->breadcrumbs[0]['route'] != $this->homepage['route'])){
                 $this->breadcrumbs = array_merge($homepage, $this->breadcrumbs);
             }
         }
