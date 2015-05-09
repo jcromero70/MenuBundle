@@ -169,7 +169,7 @@ class Menu
      *
      * @return array
      */
-    public function getBreadcrumbs($add_homepage = true)
+    public function getBreadcrumbs($addHomepage = true)
     {
         if (!empty($this->beforeLastBreadcrumb)){
             foreach($this->beforeLastBreadcrumb as $current)
@@ -184,7 +184,7 @@ class Menu
         } else {
             $this->breadcrumbs[count($this->breadcrumbs)-1]['route'] = null;
         }
-        if($this->route != $this->homepage['route'] && $add_homepage) {
+        if($this->route != $this->homepage['route'] && $addHomepage) {
             $homepage[] = array('title' => $this->menu[$this->homepage['id_name']]['title'], 'route' => $this->menu[$this->homepage['id_name']]['route'], 'icon' => $this->menu[$this->homepage['id_name']]['icon'] );
             if ((isset($this->breadcrumbs[0])) && ($this->breadcrumbs[0]['route'] != $this->homepage['route'])){
                 $this->breadcrumbs = array_merge($homepage, $this->breadcrumbs);
