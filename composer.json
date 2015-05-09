@@ -1,0 +1,26 @@
+{
+    "name": "juancarlosromero/menu-bundle",
+    "type": "symfony-bundle",
+    "description": "Menu Bundle",
+    "keywords": ["juancarlosromero", "symfony2", "bundle", "menu"],
+    "homepage": "https://github.com/jcromero70/MenuBundle.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juan Carlos Romero",
+            "homepage": "http://juancarlosromero.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/yaml": "2.6.*",
+        "symfony/security": "2.6.*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "JuanCarlosRomero\\MenuBundle": ""
+        }
+    },
+    "target-dir": "JuanCarlosRomero/MenuBundle"
+}

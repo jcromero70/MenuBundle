@@ -1,0 +1,4 @@
+services:
+    jcr.menu:
+        class: JuanCarlosRomero\MenuBundle\Service\Menu
+        arguments: [@security.authorization_checker,@security.token_storage]
