@@ -4,9 +4,7 @@ namespace JuanCarlosRomero\MenuBundle\Service;
 
 use Symfony\Component\Security\Core\Authorization\AuthorizationChecker;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
-
 use Symfony\Component\Yaml\Yaml;
-
 
 /**
  * JuanCarlosRomero\MenuBundle\Service\Menu
